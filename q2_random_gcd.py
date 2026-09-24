@@ -1,11 +1,15 @@
+import math
+import random
 """ Question 2: random_gcd() """
 """
 Inputs: None
 Output: randomly generates two integers in range [1, 100] and returns gcd
 """
 def random_gcd():
-    return 
-
+    x = random.randint(1, 100)
+    y = random.randint(1, 100)
+    print(x, y)
+    return math.gcd(x, y)
 """ Test 2 """
 def test_random_gcd():
     print("Testing random_gcd...")
