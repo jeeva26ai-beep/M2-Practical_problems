@@ -10,7 +10,16 @@ Output: shipping time needed to ship an item on specified date with special case
            (This rule doesn't apply to December)
 """
 def estimate_shipping_time(month, day):
-    return
+    days = 10
+    
+    if month == "December":
+        days += 5
+        if day >= 25:
+            days += 5
+    elif day <= 7:
+        days -= 3
+        
+    return days
 
 """ Test 5 """
 def test_estimate_shipping_time():
