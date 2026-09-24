@@ -4,8 +4,14 @@ Inputs: weight (integer) and coat_length (string)
 Output: corresponding dog breed (see Workbook for table)
 """
 def identify_dog_breed(weight, coat_length):
-    return
-
+    if weight >= 80:
+        return "Old English Sheepdog"
+    elif weight >= 40:
+        return "Collie"
+    elif weight >= 20:
+        return "Pembroke Welsh Corgi"
+    else:
+        return "Mudi"
 """ Test 8 """
 def test_identify_dog_breed():
     print("Testing identify_dog_breed...", end="")
