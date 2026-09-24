@@ -5,7 +5,10 @@ Inputs: five integers representing grades and an optional integer for the curve
 Output: prints average grade before curve is applied
         returns average grade after curve applied
 """
-# Create the function header yourself!
+def get_grade(g1, g2, g3, g4, g5, curve=0):
+    pre_curve_avg = (g1 + g2 + g3 + g4 + g5) / 5
+    print(f"Average grade pre-curve: {pre_curve_avg}")
+    return pre_curve_avg + curve
 
 """ Test 7 """
 def test_get_grade():
