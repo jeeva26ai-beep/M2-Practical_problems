@@ -6,7 +6,10 @@ Output: True if at least one of the following is true:
         2. Either one of y or z is odd
 """
 def check_conditions(x, y, z):
-    return
+    cond1 = (x > 10) and (y > 10)
+    cond2 = (y % 2 != 0) or (z % 2 != 0)
+    return cond1 or cond2
+
 
 """ Test 4 """
 def test_check_conditions():
